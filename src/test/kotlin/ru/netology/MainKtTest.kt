@@ -15,7 +15,7 @@ class MainKtTest {
 
         val commission = (calculationCommission(card, amountMonth, amount)).roundToInt()
 
-        assertEquals(0, commission)
+        assertEquals(1, commission)
     }
 
     @Test
@@ -26,7 +26,7 @@ class MainKtTest {
 
         val commission = (calculationCommission(card, amountMonth, amount)).roundToInt()
 
-        assertEquals(80, commission)
+        assertEquals(70, commission)
     }
 
     @Test
@@ -37,7 +37,7 @@ class MainKtTest {
 
         val commission = (calculationCommission(card, amountMonth, amount)).roundToInt()
 
-        assertEquals(50, commission)
+        assertEquals(60, commission)
     }
 
     @Test
@@ -48,7 +48,7 @@ class MainKtTest {
 
         val commission = (calculationCommission(card, amountMonth, amount)).roundToInt()
 
-        assertEquals(750, commission)
+        assertEquals(740, commission)
     }
 
     @Test
@@ -59,7 +59,7 @@ class MainKtTest {
 
         val commission = (calculationCommission(card, amountMonth, amount)).roundToInt()
 
-        assertEquals(35, commission)
+        assertEquals(45, commission)
     }
 
     @Test
@@ -70,6 +70,6 @@ class MainKtTest {
 
         val commission = (calculationCommission(card, amountMonth, amount)).roundToInt()
 
-        assertEquals(0, commission)
+        assertEquals(1, commission)
     }
 }
